@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSBuildDebugger", "MSBuildDebugger\MSBuildDebugger.csproj", "{AF6CE2C9-E474-4FFA-A110-8DBA7B2F2A88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSBuildDebugger_Tests", "MSBuildDebugger_Tests\MSBuildDebugger_Tests.csproj", "{DFF9D62D-627D-47C0-BC9D-166607534D58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4E9FC66D-DBFB-4F4F-ADF3-3B384256BE09}"
+	ProjectSection(SolutionItems) = preProject
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		MSBuildDebugger.vsmdi = MSBuildDebugger.vsmdi
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tkbgitvstfat01:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MSBuildDebugger\\MSBuildDebugger.csproj
+		SccProjectName1 = MSBuildDebugger
+		SccLocalPath1 = MSBuildDebugger
+		SccProjectUniqueName2 = MSBuildDebugger_Tests\\MSBuildDebugger_Tests.csproj
+		SccProjectName2 = MSBuildDebugger_Tests
+		SccLocalPath2 = MSBuildDebugger_Tests
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = MSBuildDebugger.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF6CE2C9-E474-4FFA-A110-8DBA7B2F2A88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF6CE2C9-E474-4FFA-A110-8DBA7B2F2A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF6CE2C9-E474-4FFA-A110-8DBA7B2F2A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF6CE2C9-E474-4FFA-A110-8DBA7B2F2A88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFF9D62D-627D-47C0-BC9D-166607534D58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFF9D62D-627D-47C0-BC9D-166607534D58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFF9D62D-627D-47C0-BC9D-166607534D58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFF9D62D-627D-47C0-BC9D-166607534D58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

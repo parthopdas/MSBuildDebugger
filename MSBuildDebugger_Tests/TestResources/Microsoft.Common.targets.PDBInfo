@@ -1,0 +1,441 @@
+Executable Name: Microsoft.Common.targets ({X=2,Y=17} -> {X=3,Y=3984})
+
+_CheckForInvalidConfigurationAndPlatform ({X=6,Y=526} -> {X=7,Y=539})
+Children:
+- Error {X=10,Y=529} -> {X=10,Y=529}
+- Warning {X=10,Y=530} -> {X=10,Y=530}
+- Message {X=10,Y=532} -> {X=10,Y=532}
+- Message {X=10,Y=533} -> {X=10,Y=533}
+- Error {X=10,Y=536} -> {X=10,Y=536}
+- Error {X=10,Y=537} -> {X=10,Y=537}
+- Error {X=10,Y=538} -> {X=10,Y=538}
+
+Build ({X=6,Y=555} -> {X=6,Y=555})
+Children:
+
+BeforeBuild ({X=6,Y=568} -> {X=6,Y=568})
+Children:
+
+AfterBuild ({X=6,Y=577} -> {X=6,Y=577})
+Children:
+
+CoreBuild ({X=6,Y=606} -> {X=7,Y=621})
+Children:
+- CallTarget {X=10,Y=614} -> {X=10,Y=614}
+- CallTarget {X=10,Y=615} -> {X=10,Y=615}
+- CallTarget {X=10,Y=616} -> {X=10,Y=616}
+- OnError {X=10,Y=618} -> {X=10,Y=618}
+- OnError {X=10,Y=619} -> {X=10,Y=619}
+
+Rebuild ({X=6,Y=646} -> {X=6,Y=646})
+Children:
+
+BeforeRebuild ({X=6,Y=659} -> {X=6,Y=659})
+Children:
+
+AfterRebuild ({X=6,Y=668} -> {X=6,Y=668})
+Children:
+
+CopyRunEnvironmentFiles ({X=6,Y=681} -> {X=6,Y=681})
+Children:
+
+Run ({X=6,Y=695} -> {X=7,Y=703})
+Children:
+- Error {X=10,Y=699} -> {X=10,Y=699}
+- Exec {X=10,Y=700} -> {X=10,Y=700}
+- Exec {X=10,Y=701} -> {X=10,Y=701}
+
+BuildOnlySettings ({X=6,Y=726} -> {X=7,Y=731})
+Children:
+
+PrepareForBuild ({X=6,Y=754} -> {X=7,Y=782})
+Children:
+- FindAppConfigFile {X=10,Y=774} -> {X=11,Y=777}
+- MakeDir {X=10,Y=780} -> {X=10,Y=780}
+
+GetFrameworkPaths ({X=6,Y=804} -> {X=7,Y=828})
+Children:
+- GetFrameworkPath {X=10,Y=809} -> {X=11,Y=816}
+- GetFrameworkSdkPath {X=10,Y=823} -> {X=11,Y=826}
+
+GetReferenceAssemblyPaths ({X=6,Y=844} -> {X=7,Y=859})
+Children:
+
+PreBuildEvent ({X=6,Y=880} -> {X=7,Y=887})
+Children:
+- Exec {X=10,Y=885} -> {X=10,Y=885}
+
+UnmanagedUnregistration ({X=6,Y=911} -> {X=7,Y=920})
+Children:
+- UnregisterAssembly {X=10,Y=918} -> {X=10,Y=918}
+
+ResolveReferences ({X=6,Y=950} -> {X=6,Y=950})
+Children:
+
+BeforeResolveReferences ({X=6,Y=961} -> {X=6,Y=961})
+Children:
+
+AfterResolveReferences ({X=6,Y=970} -> {X=6,Y=970})
+Children:
+
+SplitProjectReferencesByType ({X=6,Y=986} -> {X=7,Y=1016})
+Children:
+- AssignProjectConfiguration {X=10,Y=991} -> {X=11,Y=998}
+
+_SplitProjectReferencesByFileExistence ({X=4,Y=1026} -> {X=7,Y=1061})
+Children:
+- ResolveNonMSBuildProjectOutput {X=10,Y=1036} -> {X=10,Y=1044}
+
+ResolveProjectReferences ({X=6,Y=1076} -> {X=7,Y=1136})
+Children:
+- MSBuild {X=10,Y=1088} -> {X=11,Y=1098}
+- MSBuild {X=10,Y=1107} -> {X=11,Y=1115}
+- MSBuild {X=10,Y=1120} -> {X=11,Y=1129}
+- Warning {X=10,Y=1132} -> {X=10,Y=1132}
+
+GetTargetPath ({X=6,Y=1146} -> {X=6,Y=1146})
+Children:
+
+GetNativeManifest ({X=6,Y=1164} -> {X=7,Y=1174})
+Children:
+
+ResolveVCProjectReferences ({X=6,Y=1190} -> {X=7,Y=1235})
+Children:
+- ResolveNonMSBuildProjectOutput {X=10,Y=1198} -> {X=11,Y=1205}
+- ResolveVCProjectOutput {X=10,Y=1212} -> {X=11,Y=1221}
+- Error {X=10,Y=1223} -> {X=10,Y=1223}
+
+ResolveNativeReferences ({X=6,Y=1255} -> {X=7,Y=1272})
+Children:
+- ResolveNativeReference {X=10,Y=1260} -> {X=11,Y=1270}
+
+ResolveAssemblyReferences ({X=6,Y=1309} -> {X=7,Y=1369})
+Children:
+- ResolveAssemblyReference {X=10,Y=1336} -> {X=11,Y=1367}
+
+ResolveComReferences ({X=6,Y=1387} -> {X=7,Y=1420})
+Children:
+- ResolveComReference {X=10,Y=1396} -> {X=11,Y=1413}
+
+PrepareResources ({X=6,Y=1447} -> {X=6,Y=1447})
+Children:
+
+PrepareResourceNames ({X=6,Y=1466} -> {X=6,Y=1466})
+Children:
+
+AssignTargetPaths ({X=6,Y=1481} -> {X=7,Y=1518})
+Children:
+- AssignTargetPath {X=10,Y=1490} -> {X=11,Y=1492}
+- AssignTargetPath {X=10,Y=1502} -> {X=11,Y=1504}
+- AssignTargetPath {X=10,Y=1506} -> {X=11,Y=1508}
+- AssignTargetPath {X=10,Y=1510} -> {X=11,Y=1512}
+- AssignTargetPath {X=10,Y=1514} -> {X=11,Y=1516}
+
+SplitResourcesByCulture ({X=6,Y=1535} -> {X=7,Y=1595})
+Children:
+- Warning {X=10,Y=1539} -> {X=10,Y=1539}
+- Warning {X=10,Y=1540} -> {X=10,Y=1540}
+- Warning {X=10,Y=1541} -> {X=10,Y=1541}
+- Warning {X=10,Y=1542} -> {X=10,Y=1542}
+- AssignCulture {X=10,Y=1556} -> {X=11,Y=1561}
+
+CreateCustomManifestResourceNames ({X=6,Y=1608} -> {X=6,Y=1608})
+Children:
+
+ResGen ({X=6,Y=1625} -> {X=6,Y=1625})
+Children:
+
+BeforeResGen ({X=6,Y=1636} -> {X=6,Y=1636})
+Children:
+
+AfterResGen ({X=6,Y=1645} -> {X=6,Y=1645})
+Children:
+
+CoreResGen ({X=6,Y=1652} -> {X=7,Y=1709})
+Children:
+- GenerateResource {X=10,Y=1660} -> {X=11,Y=1682}
+
+CompileLicxFiles ({X=6,Y=1727} -> {X=7,Y=1747})
+Children:
+- LC {X=10,Y=1734} -> {X=11,Y=1745}
+
+ResolveKeySource ({X=6,Y=1779} -> {X=7,Y=1798})
+Children:
+- ResolveKeySource {X=8,Y=1783} -> {X=9,Y=1796}
+
+Compile ({X=6,Y=1826} -> {X=6,Y=1826})
+Children:
+
+_GenerateCompileInputs ({X=6,Y=1837} -> {X=7,Y=1860})
+Children:
+- Warning {X=10,Y=1839} -> {X=10,Y=1839}
+- Warning {X=10,Y=1840} -> {X=10,Y=1840}
+
+BeforeCompile ({X=6,Y=1869} -> {X=6,Y=1869})
+Children:
+
+AfterCompile ({X=6,Y=1878} -> {X=6,Y=1878})
+Children:
+
+_TimeStampBeforeCompile ({X=6,Y=1888} -> {X=7,Y=1896})
+Children:
+
+_TimeStampAfterCompile ({X=6,Y=1906} -> {X=7,Y=1914})
+Children:
+
+_ComputeNonExistentFileProperty ({X=6,Y=1932} -> {X=7,Y=1948})
+Children:
+
+GenerateSerializationAssemblies ({X=6,Y=1986} -> {X=7,Y=2008})
+Children:
+- SGen {X=10,Y=1993} -> {X=11,Y=2006}
+
+CreateSatelliteAssemblies ({X=6,Y=2034} -> {X=6,Y=2034})
+Children:
+
+_GenerateSatelliteAssemblyInputs ({X=6,Y=2045} -> {X=7,Y=2066})
+Children:
+- Warning {X=10,Y=2047} -> {X=10,Y=2047}
+- Warning {X=10,Y=2048} -> {X=10,Y=2048}
+
+GenerateSatelliteAssemblies ({X=6,Y=2075} -> {X=7,Y=2119})
+Children:
+- MakeDir {X=10,Y=2080} -> {X=10,Y=2080}
+- AL {X=10,Y=2083} -> {X=11,Y=2117}
+
+ComputeIntermediateSatelliteAssemblies ({X=6,Y=2133} -> {X=7,Y=2145})
+Children:
+
+SetWin32ManifestProperties ({X=6,Y=2166} -> {X=6,Y=2166})
+Children:
+
+_SetExternalWin32ManifestProperties ({X=6,Y=2171} -> {X=7,Y=2190})
+Children:
+
+_SetEmbeddedWin32ManifestProperties ({X=6,Y=2192} -> {X=8,Y=2209})
+Children:
+- GetFrameworkPath {X=10,Y=2201} -> {X=11,Y=2203}
+
+GenerateManifests ({X=6,Y=2236} -> {X=6,Y=2236})
+Children:
+
+GenerateApplicationManifest ({X=6,Y=2260} -> {X=7,Y=2311})
+Children:
+- GenerateApplicationManifest {X=10,Y=2277} -> {X=11,Y=2305}
+
+_DeploymentComputeNativeManifestInfo ({X=6,Y=2320} -> {X=7,Y=2342})
+Children:
+- ResolveManifestFiles {X=10,Y=2325} -> {X=11,Y=2327}
+- GetAssemblyIdentity {X=10,Y=2334} -> {X=11,Y=2336}
+
+_DeploymentComputeClickOnceManifestInfo ({X=6,Y=2351} -> {X=7,Y=2401})
+Children:
+- ResolveManifestFiles {X=10,Y=2369} -> {X=11,Y=2382}
+- FormatVersion {X=10,Y=2389} -> {X=11,Y=2391}
+- FormatUrl {X=10,Y=2393} -> {X=11,Y=2395}
+- FormatUrl {X=10,Y=2397} -> {X=11,Y=2399}
+
+_DeploymentGenerateTrustInfo ({X=6,Y=2410} -> {X=9,Y=2430})
+Children:
+- GenerateTrustInfo {X=10,Y=2419} -> {X=11,Y=2428}
+
+GenerateDeploymentManifest ({X=6,Y=2440} -> {X=7,Y=2477})
+Children:
+- GenerateDeploymentManifest {X=10,Y=2449} -> {X=11,Y=2475}
+
+PrepareForRun ({X=6,Y=2502} -> {X=6,Y=2502})
+Children:
+
+CopyFilesToOutputDirectory ({X=6,Y=2513} -> {X=7,Y=2610})
+Children:
+- Copy {X=10,Y=2525} -> {X=11,Y=2534}
+- Message {X=10,Y=2536} -> {X=10,Y=2536}
+- Copy {X=10,Y=2539} -> {X=11,Y=2547}
+- Copy {X=10,Y=2550} -> {X=11,Y=2559}
+- Copy {X=10,Y=2562} -> {X=11,Y=2571}
+- Copy {X=10,Y=2574} -> {X=11,Y=2583}
+- Copy {X=10,Y=2586} -> {X=11,Y=2594}
+- Copy {X=10,Y=2600} -> {X=11,Y=2608}
+
+_CopyFilesMarkedCopyLocal ({X=6,Y=2619} -> {X=7,Y=2632})
+Children:
+- Copy {X=10,Y=2622} -> {X=11,Y=2630}
+
+_CopySourceItemsToOutputDirectory ({X=6,Y=2639} -> {X=6,Y=2639})
+Children:
+
+GetCopyToOutputDirectoryItems ({X=6,Y=2667} -> {X=7,Y=2724})
+Children:
+- MSBuild {X=10,Y=2673} -> {X=11,Y=2682}
+- AssignTargetPath {X=10,Y=2708} -> {X=11,Y=2710}
+
+_CopyOutOfDateSourceItemsToOutputDirectory ({X=6,Y=2733} -> {X=7,Y=2752})
+Children:
+- Copy {X=10,Y=2743} -> {X=11,Y=2750}
+
+_CopyOutOfDateSourceItemsToOutputDirectoryAlways ({X=6,Y=2761} -> {X=7,Y=2778})
+Children:
+- Copy {X=10,Y=2769} -> {X=11,Y=2776}
+
+_CopyAppConfigFile ({X=6,Y=2787} -> {X=7,Y=2807})
+Children:
+- Copy {X=10,Y=2798} -> {X=11,Y=2805}
+
+_CopyManifestFiles ({X=6,Y=2816} -> {X=7,Y=2849})
+Children:
+- Copy {X=10,Y=2821} -> {X=11,Y=2831}
+- Message {X=10,Y=2833} -> {X=10,Y=2833}
+- Copy {X=10,Y=2835} -> {X=11,Y=2845}
+- Message {X=10,Y=2847} -> {X=10,Y=2847}
+
+_CheckForCompileOutputs ({X=6,Y=2859} -> {X=7,Y=2884})
+Children:
+
+_SGenCheckForOutputs ({X=6,Y=2894} -> {X=7,Y=2908})
+Children:
+
+UnmanagedRegistration ({X=6,Y=2931} -> {X=7,Y=2947})
+Children:
+- RegisterAssembly {X=10,Y=2937} -> {X=10,Y=2937}
+
+IncrementalClean ({X=6,Y=2972} -> {X=7,Y=3018})
+Children:
+- FindUnderPath {X=10,Y=2982} -> {X=11,Y=2984}
+- FindUnderPath {X=10,Y=2987} -> {X=11,Y=2989}
+- Delete {X=10,Y=2992} -> {X=11,Y=2998}
+- RemoveDuplicates {X=10,Y=3007} -> {X=11,Y=3009}
+- WriteLinesToFile {X=10,Y=3012} -> {X=10,Y=3012}
+
+_CleanGetCurrentAndPriorFileWrites ({X=6,Y=3027} -> {X=7,Y=3093})
+Children:
+- ReadLinesFromFile {X=10,Y=3032} -> {X=11,Y=3034}
+- ConvertToAbsolutePath {X=10,Y=3040} -> {X=11,Y=3042}
+- FindUnderPath {X=10,Y=3062} -> {X=11,Y=3064}
+- FindUnderPath {X=10,Y=3067} -> {X=11,Y=3069}
+- FindUnderPath {X=10,Y=3072} -> {X=11,Y=3074}
+- RemoveDuplicates {X=10,Y=3089} -> {X=11,Y=3091}
+
+Clean ({X=6,Y=3120} -> {X=6,Y=3120})
+Children:
+
+BeforeClean ({X=6,Y=3132} -> {X=6,Y=3132})
+Children:
+
+AfterClean ({X=6,Y=3141} -> {X=6,Y=3141})
+Children:
+
+CleanReferencedProjects ({X=6,Y=3150} -> {X=7,Y=3165})
+Children:
+- MSBuild {X=10,Y=3159} -> {X=10,Y=3159}
+
+CoreClean ({X=6,Y=3175} -> {X=7,Y=3219})
+Children:
+- ReadLinesFromFile {X=10,Y=3180} -> {X=11,Y=3182}
+- FindUnderPath {X=10,Y=3185} -> {X=11,Y=3187}
+- FindUnderPath {X=10,Y=3190} -> {X=11,Y=3192}
+- Delete {X=10,Y=3195} -> {X=11,Y=3201}
+- RemoveDuplicates {X=10,Y=3209} -> {X=11,Y=3211}
+- MakeDir {X=10,Y=3214} -> {X=10,Y=3214}
+- WriteLinesToFile {X=10,Y=3217} -> {X=10,Y=3217}
+
+_CleanRecordFileWrites ({X=6,Y=3230} -> {X=7,Y=3251})
+Children:
+- RemoveDuplicates {X=10,Y=3238} -> {X=11,Y=3240}
+- MakeDir {X=10,Y=3243} -> {X=10,Y=3243}
+- WriteLinesToFile {X=10,Y=3246} -> {X=10,Y=3246}
+
+CleanPublishFolder ({X=6,Y=3258} -> {X=7,Y=3265})
+Children:
+- RemoveDir {X=10,Y=3261} -> {X=10,Y=3261}
+
+PostBuildEvent ({X=6,Y=3300} -> {X=7,Y=3316})
+Children:
+- Exec {X=14,Y=3314} -> {X=14,Y=3314}
+
+Publish ({X=6,Y=3346} -> {X=6,Y=3346})
+Children:
+
+_DeploymentUnpublishable ({X=6,Y=3357} -> {X=7,Y=3362})
+Children:
+- Message {X=10,Y=3360} -> {X=10,Y=3360}
+
+SetGenerateManifests ({X=6,Y=3371} -> {X=7,Y=3381})
+Children:
+- Error {X=10,Y=3374} -> {X=10,Y=3374}
+- Error {X=10,Y=3375} -> {X=10,Y=3375}
+
+PublishOnly ({X=6,Y=3406} -> {X=6,Y=3406})
+Children:
+
+BeforePublish ({X=6,Y=3417} -> {X=6,Y=3417})
+Children:
+
+AfterPublish ({X=6,Y=3426} -> {X=6,Y=3426})
+Children:
+
+PublishBuild ({X=6,Y=3446} -> {X=6,Y=3446})
+Children:
+
+_CopyFilesToPublishFolder ({X=6,Y=3455} -> {X=7,Y=3510})
+Children:
+- FormatVersion {X=10,Y=3461} -> {X=11,Y=3463}
+- Copy {X=10,Y=3471} -> {X=10,Y=3471}
+- Copy {X=10,Y=3489} -> {X=10,Y=3489}
+- Copy {X=10,Y=3496} -> {X=10,Y=3496}
+- FormatUrl {X=10,Y=3502} -> {X=11,Y=3504}
+- FormatUrl {X=10,Y=3506} -> {X=11,Y=3508}
+
+_DeploymentGenerateBootstrapper ({X=6,Y=3517} -> {X=7,Y=3535})
+Children:
+- GenerateBootstrapper {X=10,Y=3521} -> {X=10,Y=3521}
+
+_DeploymentSignClickOnceDeployment ({X=6,Y=3542} -> {X=7,Y=3573})
+Children:
+- SignFile {X=10,Y=3546} -> {X=10,Y=3546}
+- UpdateManifest {X=10,Y=3552} -> {X=11,Y=3560}
+- SignFile {X=10,Y=3562} -> {X=10,Y=3562}
+- SignFile {X=10,Y=3567} -> {X=10,Y=3567}
+
+AllProjectOutputGroups ({X=6,Y=3603} -> {X=6,Y=3603})
+Children:
+
+BuiltProjectOutputGroup ({X=6,Y=3636} -> {X=7,Y=3677})
+Children:
+
+DebugSymbolsProjectOutputGroup ({X=6,Y=3695} -> {X=6,Y=3695})
+Children:
+
+DocumentationProjectOutputGroup ({X=6,Y=3717} -> {X=6,Y=3717})
+Children:
+
+SatelliteDllsProjectOutputGroup ({X=6,Y=3732} -> {X=7,Y=3752})
+Children:
+
+SourceFilesProjectOutputGroup ({X=6,Y=3765} -> {X=7,Y=3786})
+Children:
+- AssignTargetPath {X=10,Y=3770} -> {X=11,Y=3772}
+
+ContentFilesProjectOutputGroup ({X=6,Y=3799} -> {X=7,Y=3809})
+Children:
+
+SGenFilesOutputGroup ({X=6,Y=3829} -> {X=6,Y=3829})
+Children:
+
+AllProjectOutputGroupsDependencies ({X=6,Y=3851} -> {X=6,Y=3851})
+Children:
+
+BuiltProjectOutputGroupDependencies ({X=6,Y=3867} -> {X=7,Y=3880})
+Children:
+
+DebugSymbolsProjectOutputGroupDependencies ({X=6,Y=3889} -> {X=7,Y=3900})
+Children:
+
+SatelliteDllsProjectOutputGroupDependencies ({X=6,Y=3909} -> {X=7,Y=3919})
+Children:
+
+DocumentationProjectOutputGroupDependencies ({X=6,Y=3928} -> {X=7,Y=3939})
+Children:
+
+SGenFilesOutputGroupDependencies ({X=6,Y=3948} -> {X=7,Y=3957})
+Children:
+

@@ -1,0 +1,364 @@
+Executable Name: Microsoft.DevDiv.Native.targets ({X=2,Y=2} -> {X=3,Y=3429})
+
+UpdateLocalProperties ({X=6,Y=817} -> {X=7,Y=821})
+Children:
+
+BuildGeneratedLogStatus ({X=6,Y=884} -> {X=7,Y=887})
+Children:
+- Message {X=10,Y=886} -> {X=10,Y=886}
+
+BuildGenerated ({X=6,Y=889} -> {X=4,Y=893})
+Children:
+- MSBuild {X=10,Y=892} -> {X=10,Y=892}
+
+BuildCompiledLogStatus ({X=6,Y=1045} -> {X=7,Y=1048})
+Children:
+- Message {X=10,Y=1047} -> {X=10,Y=1047}
+
+BuildCompiled ({X=6,Y=1050} -> {X=8,Y=1059})
+Children:
+- CallTarget {X=3,Y=1054} -> {X=3,Y=1054}
+- CallTarget {X=10,Y=1055} -> {X=10,Y=1055}
+- MSBuild {X=10,Y=1058} -> {X=10,Y=1058}
+
+BuildLinkedLogStatus ({X=6,Y=1212} -> {X=7,Y=1215})
+Children:
+- Message {X=10,Y=1214} -> {X=10,Y=1214}
+
+BuildLinked ({X=6,Y=1217} -> {X=7,Y=1222})
+Children:
+- MSBuild {X=10,Y=1220} -> {X=10,Y=1220}
+
+_GenerateLinkResourceInputs ({X=6,Y=1247} -> {X=7,Y=1255})
+Children:
+
+GetBaseAddress ({X=6,Y=1258} -> {X=7,Y=1280})
+Children:
+- GetBaseAddress {X=10,Y=1271} -> {X=11,Y=1278}
+
+CleanCopied ({X=6,Y=1286} -> {X=7,Y=1301})
+Children:
+- Delete {X=10,Y=1290} -> {X=10,Y=1290}
+- Delete {X=10,Y=1293} -> {X=10,Y=1293}
+- Delete {X=10,Y=1296} -> {X=10,Y=1296}
+- Delete {X=10,Y=1299} -> {X=10,Y=1299}
+
+CleanZipped ({X=6,Y=1307} -> {X=7,Y=1313})
+Children:
+- Delete {X=10,Y=1310} -> {X=10,Y=1310}
+
+CoreClean ({X=6,Y=1328} -> {X=7,Y=1366})
+Children:
+- Delete {X=10,Y=1331} -> {X=10,Y=1331}
+- Delete {X=10,Y=1333} -> {X=10,Y=1333}
+- Delete {X=12,Y=1342} -> {X=12,Y=1342}
+- Delete {X=10,Y=1344} -> {X=10,Y=1344}
+- Delete {X=10,Y=1345} -> {X=10,Y=1345}
+- Delete {X=10,Y=1351} -> {X=10,Y=1351}
+- Delete {X=10,Y=1353} -> {X=10,Y=1353}
+- Delete {X=10,Y=1355} -> {X=10,Y=1355}
+- Delete {X=10,Y=1364} -> {X=10,Y=1364}
+- Delete {X=10,Y=1365} -> {X=10,Y=1365}
+
+Rebuild ({X=6,Y=1371} -> {X=6,Y=1371})
+Children:
+
+CopyFilesToBinariesDirectory ({X=6,Y=1383} -> {X=7,Y=1398})
+Children:
+- Copy {X=10,Y=1387} -> {X=10,Y=1387}
+- Copy {X=10,Y=1393} -> {X=10,Y=1393}
+
+CopyArbitraryFiles ({X=6,Y=1404} -> {X=7,Y=1434})
+Children:
+- Copy {X=10,Y=1409} -> {X=10,Y=1409}
+- Copy {X=10,Y=1416} -> {X=10,Y=1416}
+- Copy {X=10,Y=1424} -> {X=10,Y=1424}
+- Copy {X=10,Y=1429} -> {X=10,Y=1429}
+
+PrepareNativeEnvironment ({X=6,Y=1440} -> {X=7,Y=1479})
+Children:
+- Error {X=10,Y=1448} -> {X=10,Y=1448}
+- Error {X=10,Y=1451} -> {X=10,Y=1451}
+- Error {X=10,Y=1454} -> {X=10,Y=1454}
+- Error {X=10,Y=1457} -> {X=10,Y=1457}
+- Error {X=10,Y=1460} -> {X=10,Y=1460}
+- Error {X=10,Y=1463} -> {X=10,Y=1463}
+- Error {X=10,Y=1466} -> {X=10,Y=1466}
+- Error {X=10,Y=1469} -> {X=10,Y=1469}
+- Error {X=10,Y=1472} -> {X=10,Y=1472}
+- Error {X=10,Y=1477} -> {X=10,Y=1477}
+
+PrepareOacr ({X=6,Y=1484} -> {X=7,Y=1495})
+Children:
+- SetOacrConfig {X=8,Y=1488} -> {X=9,Y=1493}
+
+PrepareForBuild ({X=6,Y=1512} -> {X=7,Y=1533})
+Children:
+- MakeDir {X=10,Y=1519} -> {X=10,Y=1519}
+
+PublishGenerated ({X=6,Y=1542} -> {X=7,Y=1552})
+Children:
+- Exec {X=10,Y=1549} -> {X=10,Y=1549}
+
+PublishCompiled ({X=6,Y=1554} -> {X=7,Y=1560})
+Children:
+- Exec {X=10,Y=1558} -> {X=10,Y=1558}
+
+PublishLinked ({X=6,Y=1562} -> {X=7,Y=1568})
+Children:
+- Exec {X=10,Y=1566} -> {X=10,Y=1566}
+
+MessageCompile ({X=6,Y=1574} -> {X=7,Y=1582})
+Children:
+- Exec {X=10,Y=1580} -> {X=10,Y=1580}
+
+MIDL ({X=6,Y=1589} -> {X=7,Y=1653})
+Children:
+- MIDL {X=10,Y=1606} -> {X=11,Y=1651}
+
+CreateManifestResourceNames ({X=6,Y=1659} -> {X=7,Y=1684})
+Children:
+
+CopyLinkOutputToIntermediateDirectory ({X=6,Y=1700} -> {X=7,Y=1709})
+Children:
+- Copy {X=10,Y=1705} -> {X=10,Y=1705}
+
+GenerateAssemblyAttributes ({X=6,Y=1786} -> {X=8,Y=1837})
+Children:
+- CharacterReplace {X=10,Y=1791} -> {X=11,Y=1796}
+- CL {X=10,Y=1798} -> {X=11,Y=1819}
+- Message {X=10,Y=1821} -> {X=10,Y=1821}
+
+CleanReferencedProjects ({X=6,Y=1843} -> {X=7,Y=1854})
+Children:
+- MSBuild {X=10,Y=1851} -> {X=10,Y=1851}
+
+ResolveProjectReferencesForGenerate ({X=6,Y=1858} -> {X=7,Y=1876})
+Children:
+- MSBuild {X=10,Y=1873} -> {X=10,Y=1873}
+
+ResolveProjectReferencesForCompile ({X=6,Y=1882} -> {X=7,Y=1893})
+Children:
+- MSBuild {X=10,Y=1890} -> {X=10,Y=1890}
+
+ResolveProjectReferencesForLink ({X=6,Y=1899} -> {X=7,Y=1910})
+Children:
+- MSBuild {X=10,Y=1907} -> {X=10,Y=1907}
+
+CppPreprocess ({X=6,Y=1916} -> {X=7,Y=1945})
+Children:
+- CL {X=10,Y=1920} -> {X=11,Y=1939}
+- Copy {X=10,Y=1941} -> {X=10,Y=1941}
+
+CppPreprocessAndFilter ({X=6,Y=1947} -> {X=7,Y=1985})
+Children:
+- CL {X=10,Y=1951} -> {X=11,Y=1971}
+- Copy {X=10,Y=1973} -> {X=10,Y=1973}
+- Exec {X=10,Y=1980} -> {X=10,Y=1980}
+
+ClCreatePch ({X=6,Y=1999} -> {X=7,Y=2099})
+Children:
+- Warning {X=10,Y=2013} -> {X=10,Y=2013}
+- Delete {X=10,Y=2032} -> {X=10,Y=2032}
+- CL {X=10,Y=2036} -> {X=11,Y=2097}
+
+CppCompile ({X=6,Y=2109} -> {X=8,Y=2198})
+Children:
+- CL {X=12,Y=2136} -> {X=11,Y=2197}
+
+CtcCompile ({X=6,Y=2204} -> {X=7,Y=2217})
+Children:
+- Exec {X=10,Y=2214} -> {X=10,Y=2214}
+
+AssembleAssembler ({X=6,Y=2233} -> {X=7,Y=2235})
+Children:
+
+Assemble386Assembler ({X=6,Y=2237} -> {X=7,Y=2257})
+Children:
+- Exec {X=10,Y=2253} -> {X=10,Y=2253}
+
+AssembleAmd64Assembler ({X=6,Y=2272} -> {X=7,Y=2290})
+Children:
+- Exec {X=10,Y=2287} -> {X=10,Y=2287}
+
+AssembleIa64Assembler ({X=7,Y=2305} -> {X=4,Y=2321})
+Children:
+- Exec {X=4,Y=2317} -> {X=4,Y=2317}
+
+CheckCLForceRebuildTriggers ({X=6,Y=2330} -> {X=7,Y=2338})
+Children:
+- Message {X=10,Y=2337} -> {X=10,Y=2337}
+
+ComputeGeneratedCCompileInputs ({X=6,Y=2343} -> {X=8,Y=2363})
+Children:
+
+ComputeCompiledLibInputs ({X=6,Y=2369} -> {X=7,Y=2456})
+Children:
+
+CCompile ({X=6,Y=2466} -> {X=8,Y=2535})
+Children:
+- CL {X=10,Y=2474} -> {X=11,Y=2534}
+
+Lib ({X=6,Y=2541} -> {X=7,Y=2563})
+Children:
+- Lib {X=10,Y=2547} -> {X=10,Y=2547}
+
+LogOutputFileForLib ({X=6,Y=2566} -> {X=7,Y=2568})
+Children:
+- Message {X=10,Y=2567} -> {X=10,Y=2567}
+
+ImportLib ({X=6,Y=2574} -> {X=7,Y=2625})
+Children:
+- Lib {X=10,Y=2594} -> {X=10,Y=2594}
+- Copy {X=10,Y=2609} -> {X=10,Y=2609}
+- Lib {X=10,Y=2614} -> {X=10,Y=2614}
+
+ComputeCompiledLinkInputs ({X=6,Y=2639} -> {X=8,Y=2660})
+Children:
+
+ComputeResourcePaths ({X=6,Y=2663} -> {X=6,Y=2663})
+Children:
+
+DetermineLinkAdditionalDependencies ({X=6,Y=2673} -> {X=7,Y=2686})
+Children:
+
+Link ({X=6,Y=2692} -> {X=7,Y=2828})
+Children:
+- Link {X=10,Y=2748} -> {X=10,Y=2748}
+- CreateProperty {X=10,Y=2803} -> {X=11,Y=2805}
+- Copy {X=10,Y=2814} -> {X=11,Y=2816}
+- Copy {X=10,Y=2820} -> {X=11,Y=2822}
+- CallTarget {X=10,Y=2826} -> {X=10,Y=2826}
+
+LogOutputFileForLink ({X=6,Y=2831} -> {X=7,Y=2833})
+Children:
+- Message {X=10,Y=2832} -> {X=10,Y=2832}
+
+CopyToSuiteBin ({X=6,Y=2843} -> {X=7,Y=2859})
+Children:
+- Copy {X=10,Y=2847} -> {X=10,Y=2847}
+- Copy {X=10,Y=2853} -> {X=10,Y=2853}
+
+SignCode ({X=6,Y=2866} -> {X=7,Y=2871})
+Children:
+- Exec {X=10,Y=2869} -> {X=10,Y=2869}
+
+PrepareBrowserFileNames ({X=6,Y=2878} -> {X=7,Y=2885})
+Children:
+
+GenerateBrowserInformation ({X=6,Y=2891} -> {X=7,Y=2905})
+Children:
+- WriteLinesToFile {X=10,Y=2897} -> {X=10,Y=2897}
+- Exec {X=10,Y=2903} -> {X=10,Y=2903}
+
+ZipFileContentLog ({X=6,Y=2911} -> {X=7,Y=2931})
+Children:
+- Delete {X=10,Y=2918} -> {X=10,Y=2918}
+- WriteLinesToFile {X=10,Y=2926} -> {X=10,Y=2926}
+
+ZipFiles ({X=6,Y=2943} -> {X=7,Y=2970})
+Children:
+- Delete {X=10,Y=2950} -> {X=10,Y=2950}
+- Message {X=10,Y=2954} -> {X=10,Y=2954}
+- Zip {X=10,Y=2956} -> {X=11,Y=2963}
+- Copy {X=10,Y=2965} -> {X=10,Y=2965}
+
+CreateProfiles ({X=6,Y=2976} -> {X=7,Y=2993})
+Children:
+- Message {X=10,Y=2982} -> {X=10,Y=2982}
+- Delete {X=10,Y=2983} -> {X=10,Y=2983}
+- MakeDir {X=10,Y=2985} -> {X=10,Y=2985}
+- Copy {X=10,Y=2986} -> {X=10,Y=2986}
+- Exec {X=10,Y=2987} -> {X=10,Y=2987}
+- Exec {X=10,Y=2989} -> {X=10,Y=2989}
+- Message {X=10,Y=2991} -> {X=10,Y=2991}
+
+OverlayProfiles ({X=6,Y=2999} -> {X=7,Y=3013})
+Children:
+- Message {X=10,Y=3005} -> {X=10,Y=3005}
+- Delete {X=10,Y=3006} -> {X=10,Y=3006}
+- MakeDir {X=10,Y=3008} -> {X=10,Y=3008}
+- Exec {X=10,Y=3009} -> {X=10,Y=3009}
+- Message {X=10,Y=3011} -> {X=10,Y=3011}
+
+PreprocessDefaultManifest ({X=6,Y=3020} -> {X=7,Y=3030})
+Children:
+- Exec {X=10,Y=3026} -> {X=10,Y=3026}
+
+PreprocessManifest ({X=6,Y=3037} -> {X=7,Y=3056})
+Children:
+- Exec {X=10,Y=3043} -> {X=10,Y=3043}
+- Exec {X=10,Y=3047} -> {X=10,Y=3047}
+- Copy {X=10,Y=3052} -> {X=10,Y=3052}
+
+GenerateManifest ({X=6,Y=3071} -> {X=7,Y=3090})
+Children:
+- Exec {X=10,Y=3075} -> {X=10,Y=3075}
+- Exec {X=10,Y=3081} -> {X=10,Y=3081}
+- Error {X=10,Y=3087} -> {X=10,Y=3087}
+
+ResourceCompile ({X=6,Y=3096} -> {X=7,Y=3113})
+Children:
+- RC {X=10,Y=3100} -> {X=10,Y=3100}
+
+UIDllResourceCompile ({X=6,Y=3115} -> {X=7,Y=3135})
+Children:
+- RC {X=10,Y=3119} -> {X=11,Y=3134}
+
+UIDllLink ({X=6,Y=3146} -> {X=7,Y=3183})
+Children:
+- GetBaseAddress {X=10,Y=3152} -> {X=11,Y=3158}
+- MakeDir {X=10,Y=3160} -> {X=10,Y=3160}
+- Link {X=10,Y=3163} -> {X=10,Y=3163}
+
+GenerateIntermediateAssemblyFromAssemblyAttributes ({X=6,Y=3194} -> {X=7,Y=3209})
+Children:
+- Csc {X=10,Y=3200} -> {X=11,Y=3208}
+
+GenerateIntermediateAssemblyFromTlb ({X=6,Y=3220} -> {X=7,Y=3231})
+Children:
+- Exec {X=10,Y=3226} -> {X=11,Y=3230}
+
+DisassembleForTlbAssembly ({X=6,Y=3250} -> {X=7,Y=3273})
+Children:
+- Exec {X=10,Y=3258} -> {X=11,Y=3263}
+- Exec {X=10,Y=3266} -> {X=11,Y=3271}
+
+GenerateAssemblyFromTlb ({X=6,Y=3291} -> {X=7,Y=3320})
+Children:
+- GetBaseAddress {X=10,Y=3297} -> {X=11,Y=3302}
+- Exec {X=10,Y=3305} -> {X=11,Y=3309}
+- Exec {X=10,Y=3317} -> {X=10,Y=3317}
+
+PlaceSymbols ({X=6,Y=3326} -> {X=7,Y=3363})
+Children:
+- WriteLinesToFile {X=10,Y=3333} -> {X=10,Y=3333}
+- Exec {X=10,Y=3339} -> {X=11,Y=3344}
+- Exec {X=10,Y=3350} -> {X=10,Y=3350}
+- Move {X=10,Y=3354} -> {X=10,Y=3354}
+- Exec {X=10,Y=3359} -> {X=10,Y=3359}
+
+BeforeClean ({X=6,Y=3371} -> {X=6,Y=3371})
+Children:
+
+BeforeBuildGenerated ({X=6,Y=3379} -> {X=6,Y=3379})
+Children:
+
+BeforeBuildCompiled ({X=7,Y=3387} -> {X=7,Y=3387})
+Children:
+
+BeforeBuildLinked ({X=6,Y=3395} -> {X=6,Y=3395})
+Children:
+
+AfterClean ({X=6,Y=3403} -> {X=6,Y=3403})
+Children:
+
+AfterBuildGenerated ({X=6,Y=3411} -> {X=6,Y=3411})
+Children:
+
+AfterBuildCompiled ({X=6,Y=3419} -> {X=6,Y=3419})
+Children:
+
+AfterBuildLinked ({X=6,Y=3427} -> {X=6,Y=3427})
+Children:
+

@@ -1,0 +1,188 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title>MSBuild Debugger: A fully featured visual debugger for MSBuild projects</title>
+    <style type="text/css">
+        body
+        {
+            font: 10pt verdana, Arial;
+            color: #1F497D;
+            margin-left: 10px;
+        }
+        div.wikidoc li
+        {
+            margin-bottom: .3em;
+            margin-top: .3em;
+            vertical-align: middle;
+        }
+        li
+        {
+            margin-left: 0;
+            margin-bottom: .1em;
+            margin-top: .1em;
+        }
+        a, a:link, a:visited
+        {
+            text-decoration: underline;
+            color: #3E62A6;
+        }
+        html.IE7 div.wikidoc .externalLinkIcon
+        {
+            background-image: url(  'http://www.codeplex.com/msbdbg/Css/images/icons_weblink_sm.gif' );
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 1em;
+            margin-left: .13em;
+            width: .81em;
+        }
+        div.wikidoc ul
+        {
+            list-style-image: url(  'http://www.codeplex.com/images/doublearrow.gif' );
+            list-style-type: none;
+        }
+        ul
+        {
+            margin-left: 0em;
+            padding-left: 2em;
+            list-style-type: square;
+            list-style-image: url(  'http://www.codeplex.com/msbdbg/images/bullet_square.gif' );
+        }
+    </style>
+</head>
+<body>
+    <span id="ctl00_ctl00_Content_TabContentPanel_Content_wikiSourceLabel">
+        <div class="wikidoc">
+            <b>Project Description<br />
+            </b><br />
+            A fully featured visual debugger for MSBuild projects.<br />
+            <br />
+            Supports stepping into task, targets and imported projects, running arbitrary MSBuild
+            projects under debugger and breaking at arbitrary points, setting break points,
+            viewing call stacks and read only views of Items and Properties in break mode.<br />
+            Works well with CallTarget, MSBuild tasks and task/target batching.<br />
+            <br />
+            Tested on on out-of-box VS2008 projects and the (super-complex) Microsoft Developer
+            Division MSBuild based builds.
+            <br />
+            <br />
+            <b>Getting started</b><ol>
+                <li>Head over to <a class="externalLink" href="http://blogs.msdn.com/parthopdas">http://blogs.msdn.com/parthopdas<span
+                    class="externalLinkIcon"></span></a> to see screen shots </li>
+                <li>Download the v1.alpha release &amp; place MSBuildDebugger.exe and MSBuildDebugger.exe.config
+                    on your machine </li>
+                <li>Launch the MSBuildDebugger.exe and open a project </li>
+                <li>Use the following command &amp; shortcut keys
+                    <ol>
+                        <li>Ctrl.Shift.O - Open a project to debug </li>
+                        <li>Ctrl.O - Open an imported project or targets files to set break point </li>
+                        <li>F5 - Run the project under debugger </li>
+                        <li>F11 - Step into tasks, targets and imported projects </li>
+                        <li>F9 - Set break points on tasks and targets </li>
+                    </ol>
+                </li>
+            </ol>
+            <b>Release Notes</b><ul>
+                <li>Study the v1 feature set, v1 known issues and proposed v2 feature list in the sections
+                    below </li>
+                <li>For now play with the binaries and send me feedback at p a r t h a d @ m i c r o
+                    s o f t . c o m. Tell me about:
+                    <ul>
+                        <li>What features you want to see in v1 </li>
+                        <li>Bugs: hangs, crashes and irritations </li>
+                        <li>Whether you think this is usefull or not </li>
+                    </ul>
+                </li>
+                <li>Source code will be released for community contribution/development with final v1
+                    release (very soon) </li>
+            </ul>
+            <b>v1 Release feature set</b><ul>
+                <li>Project system
+                    <ul>
+                        <li>Open project </li>
+                        <li>Open files </li>
+                        <li>Ctrl.F support in editor </li>
+                        <li>F1 opens up this feature list </li>
+                    </ul>
+                </li>
+                <li>Environment
+                    <ul>
+                        <li>View the environment variables passed to MSBuild </li>
+                        <li>Reset the environment variable passed to msbuild </li>
+                    </ul>
+                </li>
+                <li>Stepping
+                    <ul>
+                        <li>F11 </li>
+                        <li>F5 </li>
+                        <li>Break Execution </li>
+                        <li>Current point of execution shown in yellow </li>
+                        <li>Setp into Imported projects </li>
+                    </ul>
+                </li>
+                <li>Break Points
+                    <ul>
+                        <li>BP Window </li>
+                        <li>double click take you to location </li>
+                        <li>BP highlighted in red </li>
+                        <li>F9 </li>
+                        <li>F5 breaks on BP </li>
+                        <li>Delete break points </li>
+                    </ul>
+                </li>
+                <li>Call stack
+                    <ul>
+                        <li>view current call stack, usefull for CallTarget and MSBuild tasks </li>
+                        <li>BP set on project </li>
+                        <li>Debugger steps on project </li>
+                        <li>double click take you to the stack frame </li>
+                    </ul>
+                </li>
+                <li>Output window
+                    <ul>
+                        <li>Trace of what is going on </li>
+                        <li>Debugger messages (e.g. bp hit) </li>
+                    </ul>
+                </li>
+                <li>State View
+                    <ul>
+                        <li>RO properties view </li>
+                        <li>RO items view </li>
+                    </ul>
+                </li>
+                <li>Verification
+                    <ul>
+                        <li>Can handle CallTarget, MSBuild, task &amp; target batching </li>
+                        <li>Debug OOB VS Projects </li>
+                        <li>Debug DevDi* projects </li>
+                        <li>Requires only .NET Framework 3.5 RTM (no VS2008 requried) </li>
+                    </ul>
+                </li>
+            </ul>
+            <b>Known Issues in v1</b><ul>
+                <li>Not a very jazzy UI </li>
+                    <li>Stepping is done twice for empty XML nodes </li>
+                    <li>F10 and Shift-F11 not supported yet </li>
+                    <li>Cannot close project or files once they are opened </li>
+                    <li>Random F9 behavior in remote corner cases </li>
+                    <li>Random F11 behavior in remote corner cases </li>
+            </ul>
+            <b>vNext wish list</b><ul>
+                <li>Fix known issues</li>
+                    <li>Jazzy WPF based shell (simillar to graphical PowerShell v2.0)
+                        <ul>
+                            <li>Make UI consistent with VS Debugger </li>
+                        </ul>
+                    </li>
+                    <li>Re-org and rewrite some selected parts of the code </li>
+                    <li>Command Line version of the debugger </li>
+                    <li>Visual Studio integration </li>
+                    <li>Data break points </li>
+                    <li>Properties and Items View improvements (make it RW, highlight changed ones, etc.)
+                    </li>
+                    <li>Enable multiproc support- perf </li>
+                    <li>Analyzer (Imported projects and Executable nodes views) </li>
+            </ul>
+        </div>
+    </span>
+</body>
+</html>

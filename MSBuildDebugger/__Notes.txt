@@ -1,0 +1,180 @@
+﻿============ v1 Features ===========
+v Project system
+  v Open project
+  v Open files
+  v Ctrl+F support in editor
+  v F1 opens up documentation
+v Environment
+  v View the environment variables passed to MSBuild
+  v Reset the environment variable passed to msbuild
+v Stepping
+  v F11
+  v F5
+  v Break Execution
+  v Current point of execution shown in yellow
+  v Setp into Imported projects
+v Break Points
+  v BP Window
+    v DClick take you to location
+  v BP highlighted in red
+  v F9
+  v F5 breaks on BP
+  v Delete break points
+v Call stack
+  v view current call stack, usefull for CallTarget and MSBuild tasks
+  v BP set on project
+  v Debugger steps on project
+  v DClick take you to the stack frame
+v Output window
+  v Trace of what is going on
+  v Debugger messages (e.g. bp hit)
+v State View
+  v RO properties view
+  v RO items view
+v Verification
+  v Can handle CallTarget, MSBuild, task & target batching
+  v Debug OOB VS Projects
+  v Debug DevDiv projects
+  v Requires only .NET Framework 3.5 RTM (no VS2008 requried)
+- Known Issues
+  - stepping is done twice for empty elements
+  - F10 doesnt work
+  - Shift-F11 doesnt work
+  - Cannot close project or files
+  - slightly random F9 behavior
+  - Stepping behavior random when Batching next with same named tasks
+  - Not clean exit
+
+============ TODO for v1 =================
+- Decide on Ctrl+F
+- Verify that VS dependency has not been taken
+
+============ v2 ====================
+- Re-org code
+  - Classify DBG operation modes
+- Command Line 
+- New shell
+  - Get closer to the VS debugger UI
+  - Nautilus shell may not be hostable on codeplex
+  - if not, create a wpf shell at least
+- AD7 wrapper
+- data break points
+- RW properties window
+- think about multiproc
+- perf
+- Analyzer
+  - Imports view
+  - executable nodes view
+- Properties and Items
+  - Highlight changed stuff
+
+
+================================ SCRATCH ===========================================
+
+v1:
+- Features:
+  - File Open View
+  - Output Window
+  - Breakpoints
+  - Evaluated Properties, Evaluated Items, global properties, environment properties - changes first in red
+  - Launch custom targets
+  - F5, F11 behavior
+  - Visually show current point of execution
+  - 
+- Verification:
+  - Needs to work with all OOB VS projects
+  - Needs to work with most of devdiv projects
+
+- wont work
+  - conditional overriding of targets
+  - multiple tasks of same type in a given target
+
+- vNext:
+  - F10 support
+
+- Need to understand distributed logger
+- Consider launching msbuild under CLR debugger
+
+
+
+==============================================================================
+
+
+- call stack
+  - move line/col detection to call stack calc
+  - reuse tos in LocateExecution point
+  - goto arbit frame
+    - disable properties window and others
+    - jump to location
+    - set curson in call stack window
+  - goto execution frame
+    - enable property window and others
+    - jump to location
+    - set curson in call stack window
+  - enhanced trace stack
+
+- F9
+  - select in different color
+  - revert back old highlighting
+
+- toolbar
+
+- put break point on Project element
+
+
+- Code Sync
+  - Start and end are treated as same for empty elements
+  - multiple tasks issue
+
+- before release
+  - code sync
+    - Start and end are treated as same for empty elements
+    - multiple tasks issue
+    - task batching
+    - target batching
+  - set break points
+  - prop, item, windows
+
+
+======================================== TODAY =================================
+- move engine related stuff like launching to engine
+v implement break into build
+- write tests for pdb.create 
+- modify XML parser to get project locations as well
+- put project in call stack
+  - bp binding - set to project if target not found
+  - enumeration logic
+- Start and end locations for elements
+v set BP
+  v implement F9 behavior
+  v break point window
+  v double clicking takes you into bp location
+  v debugger needs to honor it
+  - Known issues:
+    - cannot delete bp
+    - slightly random set bp behavior
+- ensure devdiv build works
+- properties/items window
+v better icons
+v running from razzle
+
+
+
+
+
+
+
+=========== Stepping Behavior ==============
+- Confirm taskid incremented for inactive tasks as well
+- No context changes
+  - no batching
+    - no inactive tasks
+    - inactive tasks
+  - batching 
+    - no inactive tasks
+    - inactive tasks
+    - batching with same name tasks
+    - batching with same name inactive tasks
+- Context changes
+
+============================================
